@@ -1,0 +1,86 @@
+@bgc : #e2e2e2;
+@bdc : @bgc - #0a0a0a;
+@c : @bgc - #555;
+
+#captcha{
+	width: 300px;
+	height: 38px;
+	line-height: 38px;
+	background: @bgc;
+	font-size: 14px;
+	font-weight: bold;
+	color: @c;
+	text-align: center;
+	position: relative;
+	border-radius: 100px;
+	border: 1px solid @bdc;
+	text-align: right;
+	position: relative;
+	// box-shadow: 0 -1px 0px rgba(0, 0, 0, 0.18);
+	box-sizing: border-box;
+	padding-right: 36px;
+	-moz-user-select: none; 
+	-o-user-select:none; 
+	-khtml-user-select:none; /* you could also put this in a class */ 
+	-webkit-user-select:none;/* and add the CSS class here instead */ 
+	-ms-user-select:none; 
+	user-select:none;/**½ûÖ¹Ñ¡ÖÐÎÄ×Ö*/ 
+
+	&.true{
+	    background: #d2f4ef;
+	    color: #d2f4ef;
+	    border: 1px solid #52ccba;
+
+	    .captcha-btn{
+	    	background: #26d6bc;
+	    }
+	}
+
+	&.false{
+	    background: #fce1e1;
+	    color: #fce1e1;
+	    border: 1px solid #f57a7a;
+
+	    .captcha-btn{
+	    	background: #f57a7a;
+	    }
+	}
+
+	.captcha-btn{
+		cursor: pointer;
+		position: absolute;
+		display: inline-block;
+		top: -1px;
+		left: 0;
+		width: 80px;
+		background: #fff;
+		border-radius: 100px;
+		// box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 3px 0 5px rgba(0, 0, 0, 0.1);
+		// box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 3px 0 6px rgba(0, 0, 0, 0.13), 6px 0 6px rgba(0, 0, 0, 0.1) inset;
+		box-shadow: 0 1px 0 rgba(0, 0, 0, 0), 3px 0 6px rgba(0, 0, 0, 0.13);
+		transform: scale(0.95);
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.captcha-img{
+		position: absolute;
+		top: -115px;
+		left: 0;
+		line-height: 0;
+
+		.captcha-img-bg{
+			box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+		}
+
+		.captcha-img-fg{
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+	}
+
+	.captcha-hide{
+		display: none !important;
+	}
+}
