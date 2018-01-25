@@ -15,8 +15,8 @@ class captcha {
 		// this.imgBg_src = '/images/captcha_1.jpg';
 		this.imgFg_src = fg;
 		this.imgBg_src = bg;
-		this.imgFgBox_src = '/images/box.png';
-		this.imgFgShadow_src = '/images/captcha_fg_shadow.png';
+		this.imgFgBox_src = './images/box.png';
+		this.imgFgShadow_src = './images/captcha_fg_shadow.png';
 
 		this.imgFgPic_el = document.createElement('img');
 		this.imgFgBox_el = document.createElement('img');
