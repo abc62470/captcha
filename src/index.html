@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>captcha</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .container .row {
+        margin: 20px 0;
+    }
+
+    .container .row input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 3px;
+        border: 1px solid #b2b2b2;
+    }
+
+    .canvas{
+        background: #f2f2f2;
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 150px;
+        left: 0;
+        right: 0;
+        /*bottom: 0;*/
+        margin: auto;
+    }
+
+    canvas{
+/*        -webkit-box-shadow: 0 0 2px rgb(0, 0, 0);
+        box-shadow: 0 0 2px rgb(0, 0, 0);
+*/    }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div class="container">
+            <div class="row">
+                <input type="text" placeholder="USER">
+            </div>
+            <div class="row">
+                <input type="text" placeholder="PASSWORD">
+            </div>
+            <div id="captcha">
+                请拖动滑块完成验证 >>
+            </div>
+        </div>
+        <!-- <img id="test" src="./images/box.png"> -->
+
+        <!-- <div class="canvas">
+            <canvas></canvas>
+        </div> -->
+        <!-- <img src="images/box.png" alt=""> -->
+    </form>
+    <!-- <script src="js/main.js"></script> -->
+    <script src="js/bundle.js"></script>
+    <script>
+        // console.log(winCaptcha);
+    </script>
+</body>
+
+</html>
